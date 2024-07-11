@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="alarm-div">
+            <h1>Alarm Clock</h1>
+            <div class="clock">
+                <div id="current-time"></div>
+            </div>
+            <form id="alarm-form">
+               <h3>Set Alarm</h3>
+                <div class="form-group inputs-alarms">
+                    <label for="hours">Hours:</label>
+                    <input type="text" class="input-hours form-control" min="1" max="12" > 
+                </div><div class="form-group inputs-alarms">
+                    <label for="minutes">Minutes:</label>
+                    <input type="text" class="input-min form-control" min="0" max="59"> 
+                                </div><div class="form-group inputs-alarms">
+                    <label for="seconds">Seconds:</label>
+                    <input type="text" class="input-sec form-control" min="0" max="59">
+                </div>
+                <div class="form-group inputs-alarms" style="
+                padding: 0px;
+                width: 50%;
+                height: 29%;
+                margin-right: 38px;
+            ">
+                    <select id="ampm" class="input-ampm form-control">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+                
+              
+                    <button type="submit" class="btn-alarm">Set Alarm</button>
+                
+            </form>
+            <div class="alarms-list">
+                <h3>Alarms List</h3>
+                <ul id="alarms" class="list-group"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="clock.js"></script>
+</body>
+</html>
