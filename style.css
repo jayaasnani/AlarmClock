@@ -35,17 +35,19 @@ body{
 .alarm-form {
     margin-bottom: 20px;
 }
-.alarm-form h3 {
+#alarm-form h3 {
     text-align: center;
     margin-bottom: 10px;
-    
+    padding: 0px 5px 0px 0px;
 }
 .form-group{
     margin-bottom:15px;
+    width:55%;
 }
 .form-control{
     height:45px;
-    width: 55%;
+    width: 85%;
+    padding: 2px;
     font-size:1.2em;
 }
 .btn-primary{
@@ -67,4 +69,22 @@ body{
 .btn-danger {
     padding: 5px 10px;
     font-size: 1em;
+}
+select {
+    width: 50px; /* Set the desired width */
+    height: 45px; /* Set the desired height */
+    font-size: 16px; /* Optional: Adjust font size */
+    border: 1px solid #ced4da;
+    border-radius:3px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    font-weight: 400;
+}
+
+/* Optionally, you can also style the options inside the select box */
+select option {
+    font-size: 16px; /* Adjust font size */
+    padding: 10px; /* Add padding to make options larger */
+}
+.btn-alarm{
+    
 }

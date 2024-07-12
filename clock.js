@@ -75,8 +75,10 @@ function checkAlarms(){
             console.log(currentTime);
             console.log("0-0000000154");
                 
-                alarmSound.src="https://samplesongs.netlify.app/Hate%20Me.mp3";
-                alarmSound.play();
+            alarmSound.src = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"; // Working alarm sound URL from SoundHelix
+            alarmSound.play().catch(error => {
+                console.error('Error playing sound:', error);
+            });
                 removeAlarm(alarm.id);
             }
         });         
