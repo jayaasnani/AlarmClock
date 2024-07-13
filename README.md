@@ -14,10 +14,6 @@ This project is an alarm clock created using vanilla JavaScript.
 3. The alarm will alert the user at the specified time.
 4. we can delete alarm also.
 
-## Demo Video
-
-[Watch the demo video](https://www.youtube.com/watch?v=YOUR_VIDEO_LINK)
-
 ## Author
 
 jaya asnani
